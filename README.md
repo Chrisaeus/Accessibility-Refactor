@@ -1,4 +1,4 @@
-# Christian's Homework 1
+# Christian's Accessibility Refactor
 
 ## What the hell is even this?
 
@@ -14,6 +14,6 @@ I also edited the CSS file to be cleaner and more efficient by annotating sectio
 
 ## Links
 
-### []()
+### [GitHub Repository](https://github.com/Chrisaeus/Accessibility-Refactor)
 
-### []()
+### [Live Website](https://chrisaeus.github.io/Accessibility-Refactor/)
