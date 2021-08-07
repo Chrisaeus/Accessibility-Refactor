@@ -1,14 +1,14 @@
-* {
+* { /* Disables the browser's default padding and margin, defines behavior of width and height properties */
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
-body {
-    background-color: #d9dcd6;
+body { /* Sets the background color of the whole page */
+    background-color: #d9dcd6; 
 }
 
-.header {
+.header { /* Sets behavior of all header classes */
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
@@ -20,11 +20,12 @@ body {
     font-size: 48px;
 }
 
-.header h1 .seo {
-    color: #d9dcd6;
+.header h1 .seo { 
+    color: #d9dcd6; /* Changes the color of the "seo" in "Horiseon" in the header/logo */
 }
 
-.header div {
+/* "div" changed to "nav" to reflect semantics in html; this CSS configures the nav bar in the header */
+.header nav {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
@@ -32,25 +33,25 @@ body {
     font-size: 20px;
 }
 
-.header div ul {
-    list-style-type: none;
+.header nav ul { 
+    list-style-type: none; /* Disables bullet points */
 }
 
-.header div ul li {
+.header nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
 
-a {
+a { /* Makes all links on the page white and removes their underline */
     color: #ffffff;
     text-decoration: none;
 }
 
-p {
+p { /* Defines the font size for all paragraphs */
     font-size: 16px;
 }
 
-.hero {
+.hero { /* This CSS inserts the photo of the meeting under he header as a background image */
     height: 800px;
     width: 100%;
     margin-bottom: 25px;
@@ -59,22 +60,23 @@ p {
     background-position: center;
 }
 
-.float-left {
+.float-left { /* Makes elements with the float-left class actually float left with some margin on the right */
     float: left;
     margin-right: 25px;
 }
 
-.float-right {
+.float-right { /* Makes elements with the float-right class actually float right with some margin on the left */
     float: right;
     margin-left: 25px;
 }
 
-.content {
+.content { /* Defines how much space on the page the main sections take up */
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
 
+/* Benefits class CSS defines the configuration of the sidebar content (box size and spacing) */
 .benefits {
     margin-right: 20px;
     padding: 20px;
@@ -86,55 +88,24 @@ p {
     background-color: #2589bd;
 }
 
-.benefit-lead {
+.benefit-lead, .benefit-brand, .benefit-cost {
     margin-bottom: 32px;
     color: #ffffff;
 }
 
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-lead h3 {
+.benefit-lead h3, .benefit-brand h3, .benefit-cost h3 {
     margin-bottom: 10px;
     text-align: center;
 }
 
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-lead img {
+.benefit-lead img, .benefit-brand img, .benefit-cost img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.search-engine-optimization {
+/* These classes define the configuration of the main sections of the page describing Horiseon's offerings */
+.search-engine-optimization, .online-reputation-management, .social-media-marketing {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -143,51 +114,16 @@ p {
     color: #ffffff;
 }
 
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.search-engine-optimization img {
+.search-engine-optimization img, .online-reputation-management img, .social-media-marketing img {
     max-height: 200px;
 }
 
-.online-reputation-management img {
-    max-height: 200px;
-}
-
-.social-media-marketing img {
-    max-height: 200px;
-}
-
-.search-engine-optimization h2 {
+.search-engine-optimization h2, .online-reputation-management h2, .social-media-marketing h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
 
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
+/* This CSS defines the behavior of the footer; text size and font as well as centering it */
 .footer {
     padding: 30px;
     clear: both;
